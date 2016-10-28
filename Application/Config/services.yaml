@@ -1,0 +1,27 @@
+# 用户服务参数配置
+parameters:
+    # 数据库设置
+    db.dbname: test
+    db.user: root
+    db.password:
+    db.host: localhost
+    db.driver: pdo_mysql
+    # 用户lib参数
+    mailer.transport: defaultMail
+
+services:
+    database:
+        class: System\Core\Database
+        calls:
+            - [connect, ['%db.dbname%', '%db.user%', '%db.password%','%db.host%', '%db.driver%']]
+    mailer:
+        class: Ebh\Component\Mail\Mailer
+        arguments: ['%mailer.transport%']
+
+    # 加载logger服务
+    filelogger:
+        class: Org\Xiang\Log\FileLogger
+        arguments: ['info']
+    logger:
+        class: Org\Xiang\Log\XiangLog
+        arguments: ['@filelogger']

@@ -1,0 +1,232 @@
+<!-- 首页 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="/static/css/basic.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/teazyk.css" />
+    <link type="text/css" rel="stylesheet" href="/static/css/resource.css"/>
+    <title>无标题文档</title>
+</head>
+
+<body>
+<?php $this->display("head");?>
+<div class="resouse">
+    <div class="nisewr">
+        <div class="titbsed">
+            <span class="whesr">热门资源</span>
+            <a href="#" class="rsrhsdn">More>></a>
+        </div>
+        <ul>
+            <?php
+            for($i=0;$i<count($resource);$i++){
+                $index = $i+1;
+                $title = $resource[$i]['title'];
+                $rid = $resource[$i]['rid'];
+                $viewnum = $resource[$i]['viewnum'];
+                echo "<li class='huiswe'>
+            <span class='dise$index'>$index</span><span class='huerase'><a class='wesize' href='/resource/detail.html?rid=$rid'>$title</a></span><span class='shuwehu'>阅读($viewnum)</span>
+            </li>";
+            }
+            ?>
+            <!--<li class="huiswe">
+                <span class="dise1">1</span><span class="huerase"><a class="wesize" href="#">基于个体差异的儿童阅读推荐基于个体差异的儿童阅读推荐基于“需要截取”...</a></span><span class="shuwehu">阅读(5654)</span>
+            </li>
+            <li class="huiswe">
+                <span class="dise2">2</span><span class="huerase"><a class="wesize" href="#">基于个体差异的儿童阅读推荐基于个体差异的“需要截取”...</a></span><span class="shuwehu">阅读(5654)</span>
+            </li>
+            <li class="huiswe">
+                <span class="dise3">3</span><span class="huerase"><a class="wesize" href="#">基于个体差异的儿童阅读推荐于个体差“需要截取”...</a></span><span class="shuwehu">阅读(5654)</span>
+            </li>
+            <li class="huiswe">
+                <span class="dise4">4</span><span class="huerase"><a class="wesize" href="#">基于个体差异的儿童阅读推荐童阅读推荐基于“需要截取”...</a></span><span class="shuwehu">阅读(5654)</span>
+            </li>
+            <li class="huiswe">
+                <span class="dise4">5</span><span class="huerase"><a class="wesize" href="#">基于个体差异的儿童阅读推荐童阅读推荐基于“需要截取”...</a></span><span class="shuwehu">阅读(5654)</span>
+            </li>
+            <li class="huiswe">
+                <span class="dise4">6</span><span class="huerase"><a class="wesize" href="#">基于个体差异的儿童阅读推荐童阅读推荐基于“需要截取”...</a></span><span class="shuwehu">阅读(5654)</span>
+            </li>
+            <li class="huiswe">
+                <span class="dise4">7</span><span class="huerase"><a class="wesize" href="#">基于个体差异的儿童阅读推荐童阅读推荐基于“需要截取”...</a></span><span class="shuwehu">阅读(5654)</span>
+            </li>
+            <li class="huiswe bornone">
+                <span class="dise4">8</span><span class="huerase"><a class="wesize" href="#">基于个体差异“最后一个没有下划线”先荐基于“需要截取”...</a></span><span class="shuwehu">阅读(5654)</span>
+            </li>-->
+        </ul>
+    </div>
+    <div class="liserz">
+        <div class="titbsed">
+            <span class="whesr">公告</span>
+            <a href="#" class="rsrhsdn">More>></a>
+        </div>
+        <ul>
+            <li class="lihnert">
+                <i class="imnse"></i>
+                <a class="gsoner" href="#">请老师们在暑假结束后上传暑期报告</a>
+                <p class="shetime">发布于：3小时前</p>
+            </li>
+            <li class="lihnert">
+                <i class="imnse"></i>
+                <a class="gsoner" href="#">请老师们在暑假结束后上传暑期报告</a>
+                <p class="shetime">发布于：3小时前</p>
+            </li>
+            <li class="lihnert">
+                <i class="imnse"></i>
+                <a class="gsoner" href="#">请老师们在暑假结束后上传暑期报告</a>
+                <p class="shetime">发布于：3小时前</p>
+            </li>
+            <li class="lihnert">
+                <i class="imnse"></i>
+                <a class="gsoner" href="#">请老师们在暑假结束后上传暑期报告</a>
+                <p class="shetime">发布于：3小时前</p>
+            </li>
+            <li class="lihnert bornone">
+                <i class="imnse"></i>
+                <a class="gsoner" href="#">请老师们在暑假结束后上传暑期报告</a>
+                <p class="shetime">发布于：3小时前</p>
+            </li>
+        </ul>
+    </div>
+    <div class="zesrkse">
+        <div class="titbsed">
+            <span class="whesr">最新发布</span>
+            <a href="#" class="rsrhsdn">More>></a>
+        </div>
+        <div class="hnuwrds">
+            <div class="nistrber">
+                六年级 > 英语 > drrg
+            </div>
+            <h2 class="jierseds">
+                基于差异的儿童阅读推荐
+                <span class="husrers"><img src="http://static.ebanhui.com/ebh/tpl/2016/images/tuico.jpg" /> 21</span>
+                <span class="husrers"><img src="http://static.ebanhui.com/ebh/tpl/2016/images/urlico.jpg" /> 21</span>
+            </h2>
+            <p class="nsrdre">作者：付老师<span class="hewusae">发布于：3小时前</span></p>
+            <p class="hursres">【内容介绍】众所周知，孩子们每个都是不一样的，大家都是独立的个体，因此每个孩子都需要适合自己的书。。众所周知，孩子们每个都是不一样的，大家都是独立的个体，因此每个孩子都需要适合自己的书。。众所周知，孩子们每个都是不一</p>
+            <img class="jsiure" src="http://static.ebanhui.com/ebh/tpl/2016/images/shitu01.jpg" />
+            <img class="jsiure" src="http://static.ebanhui.com/ebh/tpl/2016/images/shitu01.jpg" />
+            <img class="jsiure" src="http://static.ebanhui.com/ebh/tpl/2016/images/shitu01.jpg" />
+            <img class="jsiure" src="http://static.ebanhui.com/ebh/tpl/2016/images/shitu01.jpg" />
+            <div class="husrdrs">
+                <a href="#" class="lisewrs">阅读(564)</a>
+                <a href="#" class="lisewrs">评论(36)</a>
+                <a href="#" class="lisewrs">收藏(564)</a>
+                <a href="#" class="lisewrs">下载(36)</a>
+            </div>
+        </div>
+        <div class="hnuwrds">
+            <div class="nistrber">
+                六年级 > 语文 > 思想教育
+            </div>
+            <h2 class="jierseds">
+                基于差异的儿童阅读推荐
+                <span class="husrers"><img src="http://static.ebanhui.com/ebh/tpl/2016/images/tuico.jpg" /> 21</span>
+                <span class="husrers"><img src="http://static.ebanhui.com/ebh/tpl/2016/images/urlico.jpg" /> 21</span>
+            </h2>
+            <p class="nsrdre">作者：付老师<span class="hewusae">发布于：3小时前</span></p>
+            <p class="hursres">【内容介绍】众所周知，孩子们每个都是不一样的，大家都是独立的个体，因此每个孩子都需要适合自己的书。。众所周知，孩子们每个都是不一样的，大家都是独立的个体，因此每个孩子都需要适合自己的书。。众所周知，孩子们每个都是不一</p>
+            <div class="husrdrs">
+                <a href="#" class="lisewrs">阅读(564)</a>
+                <a href="#" class="lisewrs">评论(36)</a>
+                <a href="#" class="lisewrs">收藏(564)</a>
+                <a href="#" class="lisewrs">下载(36)</a>
+            </div>
+        </div>
+        <div class="hnuwrds">
+            <div class="nistrber">
+                六年级 > 语文 > 思想教育
+            </div>
+            <h2 class="jierseds">
+                基于差异的儿童阅读推荐
+                <span class="husrers"><img src="http://static.ebanhui.com/ebh/tpl/2016/images/tuico.jpg" /> 21</span>
+                <span class="husrers"><img src="http://static.ebanhui.com/ebh/tpl/2016/images/urlico.jpg" /> 21</span>
+            </h2>
+            <p class="nsrdre">作者：付老师<span class="hewusae">发布于：3小时前</span></p>
+            <div class="husrdrs">
+                <a href="#" class="lisewrs">阅读(564)</a>
+                <a href="#" class="lisewrs">评论(36)</a>
+                <a href="#" class="lisewrs">收藏(564)</a>
+                <a href="#" class="lisewrs">下载(36)</a>
+            </div>
+        </div>
+    </div>
+    <div class="bsieres">
+        <div class="titbsed">
+            <span class="whesr">排行榜</span>
+            <div class="buyhsre">
+                <span class="fsrewr">按资源</span>
+                <div class="nuserwe">
+                    <a class="hnuyewr" href="#">按学分</a>
+                    <a class="hnuyewr" href="#">按资源</a>
+                </div>
+            </div>
+        </div>
+        <ul>
+            <li class="hturse">
+                <span class="dsure1">1</span>
+                <span class="dhsure">付老师</span>
+                <span class="dsuoren clselce">458份资源</span>
+                <span class="xsyaeaw">1554学分</span>
+            </li>
+            <li class="hturse">
+                <span class="dsure2">2</span>
+                <span class="dhsure">付老师</span>
+                <span class="dsuoren clselce">458份资源</span>
+                <span class="xsyaeaw">1554学分</span>
+            </li>
+            <li class="hturse">
+                <span class="dsure3">3</span>
+                <span class="dhsure">付老师</span>
+                <span class="dsuoren clselce">458份资源</span>
+                <span class="xsyaeaw">1554学分</span>
+            </li>
+            <li class="hturse">
+                <span class="dsure4">4</span>
+                <span class="dhsure">付老师</span>
+                <span class="dsuoren">458份资源</span>
+                <span class="xsyaeaw">1554学分</span>
+            </li>
+            <li class="hturse">
+                <span class="dsure4">5</span>
+                <span class="dhsure">付老师</span>
+                <span class="dsuoren">458份资源</span>
+                <span class="xsyaeaw">1554学分</span>
+            </li>
+            <li class="hturse">
+                <span class="dsure4">6</span>
+                <span class="dhsure">付老师</span>
+                <span class="dsuoren">458份资源</span>
+                <span class="xsyaeaw">1554学分</span>
+            </li>
+            <li class="hturse">
+                <span class="dsure4">7</span>
+                <span class="dhsure">付老师</span>
+                <span class="dsuoren">458份资源</span>
+                <span class="xsyaeaw">1554学分</span>
+            </li>
+            <li class="hturse">
+                <span class="dsure4">8</span>
+                <span class="dhsure">付老师</span>
+                <span class="dsuoren">458份资源</span>
+                <span class="xsyaeaw">1554学分</span>
+            </li>
+            <li class="hturse">
+                <span class="dsure4">9</span>
+                <span class="dhsure">付老师</span>
+                <span class="dsuoren">458份资源</span>
+                <span class="xsyaeaw">1554学分</span>
+            </li>
+            <li class="hturse">
+                <span class="dsure4">10</span>
+                <span class="dhsure">付老师</span>
+                <span class="dsuoren">458份资源</span>
+                <span class="xsyaeaw">1554学分</span>
+            </li>
+        </ul>
+    </div>
+</div>
+<?php $this->display("js");?>
+</body>
+</html>
+

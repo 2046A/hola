@@ -1,0 +1,8 @@
+# 系统核心配置，很少
+services:
+    template:
+        class: System\Core\Template
+    classloader:
+        class: Symfony\Component\ClassLoader\Psr4ClassLoader
+    router:
+        class: System\Core\Router

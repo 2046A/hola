@@ -1,0 +1,12 @@
+{
+  "require": {
+    "symfony/dependency-injection": "*",
+    "symfony/config": "*",
+    "symfony/routing": "*",
+    "symfony/http-foundation": "*",
+    "symfony/yaml": "*",
+    "twig/twig": "~1.0",
+    "symfony/class-loader": "*",
+    "doctrine/dbal": "v2.5.4"
+  }
+}
