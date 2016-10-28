@@ -4,8 +4,11 @@
  * Date: 2016/7/20
  * Home.php
  */
-namespace Application\Controller;
+namespace Application\Http\Controller;
+
 use System\Core\Controller;
+use Application\Http\Request\RequestForm;
+use Symfony\Component\HttpFoundation\Request;
 
 class HomeController extends Controller
 {
@@ -15,11 +18,17 @@ class HomeController extends Controller
         parent::__construct();
     }
 
-    public function index()
+    public function index(Request $request)
     {
         $this->logger->log("what the fuck");
 
         holy();
         return view("other.twig");
+    }
+
+    //比如这样..
+    public function validate(RequestForm $request)
+    {
+
     }
 }
